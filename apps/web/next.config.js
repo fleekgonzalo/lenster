@@ -6,12 +6,12 @@ const headers = [{ key: 'Cache-Control', value: 'public, max-age=3600' }];
 const nextConfig = {
   productionBrowserSourceMaps: true,
   transpilePackages: ['data'],
-  output: 'export',
   reactStrictMode: false,
   experimental: {
     scrollRestoration: true,
     newNextLinkBehavior: true,
     swcPlugins: [['@lingui/swc-plugin', {}]]
-  },
+  }
+};
 
 module.exports = nextConfig;
